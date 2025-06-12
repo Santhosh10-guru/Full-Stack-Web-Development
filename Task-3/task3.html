@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="task3.css"> 
+</head>
+<body>
+  <header>
+    <h1>Advanced Styling and JavaScript</h1>
+    <p>Responsive | Interactive Quiz | API Fetch</p>
+  </header>
+
+  <section>
+    <h2>Responsive Design</h2>
+    <p>This page adjusts its layout and styles based on your screen size. Try resizing your browser!</p>
+  </section>
+
+  <section>
+    <h2>JavaScript Quiz</h2>
+    <div id="quiz-container"></div>
+    <button onclick="submitQuiz()">Submit Quiz</button>
+    <p id="quiz-result"></p>
+  </section>
+
+  <section>
+    <h2>Get a Random Joke</h2>
+    <button onclick="getJoke()">Fetch Joke</button>
+    <p id="joke"></p>
+  </section>
+
+  <section>
+  <h1>Image Carousel</h1>
+
+  <div class="carousel" id="carousel">
+    <img src="https://picsum.photos/id/1018/800/400" class="active" alt="Image 1">
+    <img src="https://picsum.photos/id/1025/800/400" alt="Image 2">
+    <img src="https://picsum.photos/id/1035/800/400" alt="Image 3">
+  </div>
+
+  <div class="controls">
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+  </div>
+  </section>
+
+  <script src="task3.js"></script> 
+
+</body>
+</html>
