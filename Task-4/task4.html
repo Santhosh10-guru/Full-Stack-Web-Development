@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevConnect - Colorful Portfolio</title>
+  <link rel="stylesheet" href="task4.css"> 
+</head>
+<body>
+
+  <h1>🌈Connect - Vibrant Web Project</h1>
+
+  <nav>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('todo')">To-Do</a>
+    <a href="#" onclick="showSection('products')">Products</a>
+    <a href="#" onclick="showSection('contact')">Contact</a>
+  </nav>
+
+
+  <section id="about" class="active">
+    <h2>👋 About Me</h2>
+    <div class="about-content">
+      <p>Welcome to Vibrant Web Tech, where innovation meets excellence in the realm of digital solutions. We are a dynamic team of passionate individuals dedicated to providing top-notch services in web design, web development, application development, SEO, digital marketing, graphic design, and software development. At Vibrant Web Tech, we believe in the power of technology to transform businesses and empower individuals. With a focus on creativity, innovation, and customer satisfaction, we strive to deliver solutions that not only meet but exceed our clients' expectations.</p>
+      <ul>
+        <li>🌟 A responsive multi-section site</li>
+        <li>✅ A functional To-Do app with localStorage</li>
+        <li>📦 A filterable and sortable product listing</li>
+        <li>📫 A contact form ready for future integration</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section id="todo">
+    <h2>📝 My To-Do App</h2>
+    <input type="text" id="todo-input" placeholder="Add a task..." />
+    <select id="todo-category">
+      <option value="General">General</option>
+      <option value="Work">Work</option>
+      <option value="Study">Study</option>
+    </select>
+    <button id="add-btn">Add</button>
+    <ul class="todo-list" id="todo-list"></ul>
+  </section>
+
+ 
+  <section id="products">
+    <h2>🛠️ Developer Tools</h2>
+    <div class="filters">
+      <label>Type:</label>
+      <select id="filter-type">
+        <option value="all">All</option>
+        <option value="tool">Tool</option>
+        <option value="course">Course</option>
+        <option value="framework">Framework</option>
+      </select>
+
+      <label>Sort:</label>
+      <select id="sort">
+        <option value="name">Name</option>
+        <option value="rating">Rating</option>
+      </select>
+    </div>
+    <div id="product-list"></div>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="task4.js"></script> 
+
+</body>
+</html>
