@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grocery Store</title>
+  <link rel="stylesheet" href="task5.css"> 
+
+ 
+</head>
+<body>
+
+  <header>
+    <h1>Grocery Store</h1>
+    <div id="userGreeting"></div>
+    <div class="cart-icon" id="cartIcon" data-count="0">🛒</div>
+  </header>
+
+  <div class="product-container" id="productList">
+  </div>
+
+  <div id="cart" class="hidden">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <div id="cart-summary">Total: ₹0</div>
+  </div>
+
+  <div class="login-popup" id="loginPopup">
+    <div class="login-form">
+      <h2 id="formTitle">Login</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="submitForm()">Submit</button>
+      <p><span id="toggleForm" style="color:blue; cursor:pointer;">Create Account</span></p>
+    </div>
+  </div>
+
+  <script src="task5.js"></script> 
+
+</body>
+</html>
